@@ -1,4 +1,5 @@
 import SparkMD5 from "./spark-md5.js";
+
 export function createChunk(file, index, chunkSize) {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();

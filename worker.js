@@ -1,4 +1,5 @@
 import { createChunk } from "./createChunk.js";
+
 self.onmessage = async (e) => {
   const { file, chunkSize, start, end } = e.data;
   let proms = [];
