@@ -1,4 +1,4 @@
-import SparkMD5 from "./spark-md5.js";
+import "./spark-md5.js";
 
 export function createChunk(file, index, chunkSize) {
   return new Promise((resolve, reject) => {
