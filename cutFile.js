@@ -12,7 +12,7 @@ export async function cutFile(
     let finishCount = 0;
     for (let i = 0; i < threadCount; i++) {
       // 创建线程，并分配任务
-      const worker = new Worker("/worker.js", { type: "module" });
+      const worker = new Worker("./worker.js", { type: "module" });
       const start = i * threadChunkCount;
       const end = Math.min((i + 1) * threadChunkCount, chunkCount);
 
