@@ -1,4 +1,4 @@
-import "./spark-md5.js";
+import "./spark-md5.min.js";
 
 export function createChunk(file, index, chunkSize) {
   return new Promise((resolve, reject) => {
